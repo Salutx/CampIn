@@ -10,6 +10,9 @@ mostly created by **HTML5** and **CSS3**. **(non-dynamic)**
 
 ## Models
 ### CampIn
-![#7932ff](https://i.imgur.com/hc8K90g.png) 
+![CampIn](https://i.imgur.com/hc8K90g.png) 
+
+### RocketDark
+![RocketDark](https://i.imgur.com/KPf69zm.png) 
 
 *Salutx, apprentice*
