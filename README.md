@@ -16,11 +16,11 @@ created with **CSS** a layout with a minimal style.**(non-dynamic)**.
 - Open `index.html` in your browser.
 
 ## Preview [Computer] 
-##### See all <a href="https://www.behance.net/gallery/136068605/Druman">here</a><br>
+##### See all <a href="https://www.behance.net/gallery/136179113/CampIn?">here</a><br>
 ![#7932ff](https://i.imgur.com/hc8K90g.png) 
 
 ## Preview [Mobile]
-##### See all <a href="https://www.behance.net/gallery/136068605/Druman">here</a><br>
+##### See all <a href="https://www.behance.net/gallery/136179113/CampIn?">here</a><br>
 ![#7932ff](https://i.imgur.com/unf4Z9k.png)
 
 *Salutx, apprentice*
