@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #0b0a0c;
+    --form-background: #24242950;
+    --primary-color: #7932ff;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+body {min-height: 100vh; display: flex;}
+
+main {
+    display: flex;
+    flex-basis: 40%;
+    background-color: var(--background);
+}
+
+.login--container {
+    margin: 0 auto;
+    max-width: 48rem;
+    width: 60%;
+}
+
+.login--logo {
+    width: 100%;
+    height: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login--form--back {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    height: auto; 
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.login--panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+
+Login Header
+
+*/
+
+.login--icon {
+    display: flex;
+    gap: .6rem;
+    align-items: center;
+}
+
+.login--icon img {color: var(--primary-color);}
+
+.login--form--header {font-size: 1rem; width: 100%; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;}
+
+.login--form--header p {
+    font-weight: bold;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    color: var(--text-base);
+    margin-top: 5px;
+}
+
+.login--form--header h1 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: var(--text-title);
+}
+
+/* 
+
+Login Main
+
+*/
+
+.login--form--main {
+    display: flex;
+    margin-top: 1.5rem;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    color: var(--primary-color);
+    outline: none;
+}
+
+.input::placeholder {
+    color: lightgray;
+}
+
+.input--icons {
+    display: flex;
+    background-color: var(--form-background);
+    border-radius: 5px;
+    padding: 15px;
+    gap: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    animation: all 0.2s;
+}
+
+.input--icons:focus-within {border: 1px solid var(--primary-color);}
+
+form button[type=submit] {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 15px;
+    color: var(--background);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.remember-lost {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1.6rem 0;
+    font-size: 0.9rem;
+}
+
+.remember {
+    display: flex;
+    align-items: center; 
+    line-height: 0;
+    color: var(--text-base);
+}
+
+.regular-checkbox:not(:checked) {
+    background-color: rgb(161, 0, 0);
+    border: none;
+}
+
+.checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.checkbox input {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.checkbox label {
+    position: relative;
+    padding-left: 1.8em;
+    display: inline-block;
+}
+
+.checkbox label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    height: 1.1em;
+    width: 1.1em;
+    background: transparent;
+    border: 1px solid var(--text-base);
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.checkbox label::after {
+    content: url(./images/check.svg);
+    position: absolute;
+    top: 50%;
+    left: 0.66em;
+    transform: translate(-50%, -50%);
+    color: var(--form-background);
+    opacity: 0;
+}
+
+.checkbox label:focus::before, .checkbox label:hover::before {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.checkbox input:checked + label::before {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.checkbox input:checked + label::after {
+    opacity: 1;
+}
+
+.input--list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.input--style p {
+    color: var(--text-base);
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+
+.register {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .3rem;
+    color: var(--primary-color);
+}
+
+aside {
+    flex: 1;
+    background-image: url(./images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1400px) {
+    aside {display: none;}
+
+    main {flex: 1;}
+
+    .login--panel {width: 90%;}
+
+    .login--container {width: 100%;}
+
+
+}
