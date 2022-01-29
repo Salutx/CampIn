@@ -15,11 +15,11 @@ created with **CSS** a layout with a minimal style.**(non-dynamic)**.
 - Clone this repository
 - Open `index.html` in your browser.
 
-## Preview [Computer] 
+## Preview [Computer] ![#7932ff](https://via.placeholder.com/10/7932ff/ffffff?text=+)
 ##### See all <a href="https://www.behance.net/gallery/136179113/CampIn?">here</a><br>
 ![#7932ff](https://i.imgur.com/hc8K90g.png) 
 
-## Preview [Mobile]
+## Preview [Mobile] ![#7932ff](https://via.placeholder.com/10/7932ff/ffffff?text=+)
 ##### See all <a href="https://www.behance.net/gallery/136179113/CampIn?">here</a><br>
 ![#7932ff](https://i.imgur.com/unf4Z9k.png)
 
