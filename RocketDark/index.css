@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --background: rgb(18, 18, 20);
+    --form-background: rgb(32, 32, 36);
+    --primary-color: rgb(106, 175, 49);
+    --paragraph-color: rgb(204, 204, 204);
+    --base-color: rgb(40, 39, 44);
+}
+
+a {text-decoration: none; font-weight: bold;}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--background);
+}
+
+.main--login {
+    flex: 1 1 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 32px;
+}
+
+.main--box {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* 
+
+Login-apresentation
+
+*/
+
+.login--apresentation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    gap: 0.5rem;
+}
+
+.login--apresentation h1 {    
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.login--apresentation h5 {
+    font-family: Poppins;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--paragraph-color);
+    text-transform: lowercase;
+}
+
+.destaque--span {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo i {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+
+/* 
+
+Login-form
+
+*/
+
+.login--form {
+    width: 100%;
+    max-width: 480px;
+    background-color: var(--form-background);
+    padding: 64px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
+
+.box--left, .box--right {
+    width: 100%;
+}
+
+.input--style {
+    background-color: var(--background);
+    padding: 15px 0;
+    width: 100%;
+    line-height: 0;
+    border-radius: 5px;
+
+    border: 2px solid var(--background);
+    
+    display: flex;
+    align-items: center;
+    
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+    transition: border 0.2s ease 0s;
+}
+
+.input--style i {
+    margin: 0 1rem;
+    width: 0.8rem;
+    color: var(--base-color);
+}
+
+.input--style .fa-eye {color: var(--primary-color);}
+
+.input--style input {
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding: 5px 0;
+}
+
+.input--style input::placeholder {
+    font-size: 0.9rem;
+}
+
+.input--style:focus-within {
+    border: 2px solid var(--primary-color);
+}
+
+.input--style:focus-within i {
+    color: var(--primary-color);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.lost--password a {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+}
+
+.button--login {width: 100%;}
+
+.button--login button {
+    background-color: var(--primary-color); 
+    color: var(--form-background);
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+}
+
+.button--login button:hover {background-color: yellowgreen}
+
+.not--registered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    gap: 0.3rem;
+    margin: 10px 0;
+}
+
+.not--registered a {
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.form--divider {
+    position: relative;
+    font-size: 12px;
+    color: var(--paragraph-color);
+}
+
+.form--divider::before {left: 0px;}
+
+.form--divider::after {right: 0px;}
+
+.form--divider::before, .form--divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: calc(50% - 25px);
+    height: 1px;
+    background-color: var(--base-color);
+}
+
+.login--other {
+    display: flex;
+    font-size: 0.8rem;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 15px 0;
+}
+
+.login--other p {white-space: nowrap;}
+
+.github--button button {
+    background-color: transparent; 
+    border: none; 
+    font-size: .8rem; 
+    text-transform: uppercase; 
+    font-weight: bolder; 
+    color: var(--paragraph-color);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.github--button i {color: var(--primary-color); transition: all 0.2s;}
+
+.github--button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+    padding: 15px 20px;
+    background-color: rgb(41, 41, 46);
+    width: 100%;
+    border-radius: 5px;
+    gap: 0.5rem;
+    margin: 0;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.github--button:hover {
+    background-color: var(--primary-color);
+}
+
+.github--button:hover, .github--button:hover button, .github--button:hover i {
+    color: var(--form-background);
+}
+
+@media only screen and (max-width: 768px) {
+
+    .login--apresentation {max-width: 100%;}
+
+    .login--apresentation h1 {
+        font-size: 3rem;
+    }
+
+    .main--box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .box--left, .box--right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .login--form {
+        padding: 32px;
+    }
+}
