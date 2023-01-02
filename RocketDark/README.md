@@ -10,7 +10,7 @@ created with **CSS** inspired by **@RocketSeat** form. **(non-dynamic)**.
 ![html5](https://img.shields.io/badge/HTML5-52B83D?style=for-the-badge&logo=html5&logoColor=white) 
 ![css](https://img.shields.io/badge/CSS3-52B83D?style=for-the-badge&logo=css3&logoColor=white) 
 
-## How to use ![#52B83D]
+## How to use
 
 - Clone this repository
 - Open `index.html` in your browser.
